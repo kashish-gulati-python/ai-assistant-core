@@ -7,11 +7,39 @@ A full-stack AI orchestration platform. This project serves as an intelligent ba
 ai-assistant/
 ├── backend/
 │   ├── app/
-│   │   ├── api/        # API Routes
-│   │   ├── services/   # Business logic (LLM/RAG calls)
-│   │   ├── models/     # Pydantic schemas
-│   │   └── main.py     # Application entry point
+│   │   ├── api/        
+│   │   ├── services/   
+│   │   ├── models/     
+│   │   └── main.py     
 │   └── requirements.txt
+ai-assistant/
+├── .venv/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py     # Application entry point
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   │
+│   │   ├── routes/
+│   │   │   └── chat.py     # API Routes
+│   │   │
+│   │   ├── services/
+│   │   │   └── chat_service.py     # Business logic (LLM/RAG calls)
+│   │   │
+│   │   ├── models/     # Pydantic schemas
+│   │   │   └── common.py
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   └── package.json
+│
+├── README.md
+└── .gitignore
 ```
 
 ## Getting Started
@@ -33,7 +61,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ```bash
 pip install -r backend/requirements.txt
-Run the application:
 ```
 
 ### 4. Run the application
