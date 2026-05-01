@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import chat
+from routes import chat
 
 app = FastAPI(title="AI-Assistant")
 
