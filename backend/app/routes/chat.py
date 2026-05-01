@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from app.models.common import ChatRequest, ChatResponse
-from app.services.chat_service import process_chat
+from models.common import ChatRequest, ChatResponse
+from services.chat_service import process_chat
 
 router = APIRouter(prefix="/chat", tags=["Chat"])
 
